@@ -6,8 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <style>
-        html, body, input { margin: 0; padding: 6px 130px; box-sizing: border-box; font-family: 'Gamja Flower', cursive; }
-        #btnAdd {padding: 4px 30px;}
+        html, body{ margin: 0; padding: 6px 130px; box-sizing: border-box; font-family: 'Gamja Flower', cursive; }
+        input{ font-family: 'Gamja Flower';}
+        #btnAdd { margin: 0 auto; padding: 4px 30px;}
         #DeleteSel, #btnDelLast, #btnDelAll { margin: auto; display: inline-block;}
         button { font-family: 'Gamja Flower', cursive; background: #a369af; color: #fff; font-size: 18px; cursor: pointer; }
         .list-box { width: 500px; margin: 100px auto; border: 1px solid #eee; padding: 20px 30px 50px; background: #333; }
@@ -28,7 +29,7 @@
     <div class="list-box">
         <h1>To Do List</h1>
         <div>
-            <input type="text" class="text-basic">
+            <input type="text" class="text-basic" style="font-size: 20px;" size="40">
             <button type="button" id="btnAdd">추가</button>
         </div>
         <table class="list-table">
