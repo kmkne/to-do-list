@@ -3,7 +3,7 @@ document.getElementById('btnDelAll').addEventListener('click', delAllEle);
 document.getElementById('btnDelLast').addEventListener('click', delLastEle);
 document.getElementById('DeleteSel').addEventListener('click', delSelected);
 
-window.onload = function addList() {
+function addList() {
     var contents = document.querySelector('.text-basic');
     if(!contents.value) {
         alert('내용을 입력해주세요.');
@@ -29,7 +29,7 @@ window.onload = function addList() {
     contents.focus();
 }
 
-window.onload = function delAllEle() {
+function delAllEle() {
     var list = document.getElementById('listBody');
     var listChild = list.children;
     for(var i=0; i<listChild.length; i++) {
@@ -38,7 +38,7 @@ window.onload = function delAllEle() {
     }
 }
 
-window.onload = function delLastEle() {
+function delLastEle() {
     var body = document.getElementById('listBody');
     var list = document.querySelectorAll('#listBody > tr');
     if(list.length > 0) {
@@ -50,7 +50,7 @@ window.onload = function delLastEle() {
     }
 }
 
-window.onload = function delSelected() {
+function delSelected() {
     var body = document.getElementById('listBody');
     var chkbox = document.querySelectorAll('#listBody .btn-chk');
     for(var i in chkbox) {
